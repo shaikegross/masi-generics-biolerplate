@@ -2,8 +2,8 @@ import { ExternalMasiEntity } from "../../types/masi/entities/external-masi-enti
 import { ExternalMasiEntityResponses } from "../../types/masi/responses/external-masi-entity-responses";
 
 export abstract class MasiApiEntityController<
-  Entity extends ExternalMasiEntity,
-  EntityResponse extends ExternalMasiEntityResponses<Entity>> {
+  Entity extends ExternalMasiEntity = ExternalMasiEntity,
+  EntityResponse extends ExternalMasiEntityResponses<Entity> = ExternalMasiEntityResponses<Entity>> {
   abstract create(invoice: Entity): EntityResponse["createResponse"];
   abstract read(): EntityResponse["readResponse"];
   abstract update(invoice: Entity): EntityResponse["updateResponse"];
