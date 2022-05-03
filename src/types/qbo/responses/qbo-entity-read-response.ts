@@ -1,6 +1,6 @@
-import { ExternalMasiEntity } from "../../masi/entities/external-masi-entity";
+import { ExternalEntity } from "../../masi/entities/external-entity";
 import { ReadOperation } from '../../masi/operations/read-operation';
 
 import { ExternalMasiEntityOperationResponse } from "../../masi/responses/external-masi-entity-operation-response";
 
-export interface QboEntityReadResponse<Entity extends ExternalMasiEntity> extends ExternalMasiEntityOperationResponse<Entity, ReadOperation> { }
+export interface QboEntityReadResponse<Entity extends ExternalEntity> extends ExternalMasiEntityOperationResponse<Entity, ReadOperation> { }

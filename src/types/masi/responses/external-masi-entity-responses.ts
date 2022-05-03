@@ -1,11 +1,11 @@
-import { ExternalMasiEntity } from "../entities/external-masi-entity";
+import { ExternalEntity } from "../entities/external-entity";
 import { ExternalMasiEntityCreateResponse } from '../responses/operation-responses/external-masi-entity-create-response'
 import { ExternalMasiEntityReadResponse } from '../responses/operation-responses/external-masi-entity-read-response'
 import { ExternalMasiEntityUpdateResponse } from '../responses/operation-responses/external-masi-entity-update-response'
 import { ExternalMasiEntityDeleteResponse } from '../responses/operation-responses/external-masi-entity-delete-response'
 
 export interface ExternalMasiEntityResponses<
-  Entity extends ExternalMasiEntity,
+  Entity extends ExternalEntity,
   CreateResponse extends ExternalMasiEntityCreateResponse<Entity> = ExternalMasiEntityCreateResponse<Entity>,
   ReadResponse extends ExternalMasiEntityReadResponse<Entity> = ExternalMasiEntityReadResponse<Entity>,
   UpdateResponse extends ExternalMasiEntityUpdateResponse<Entity> = ExternalMasiEntityUpdateResponse<Entity>,

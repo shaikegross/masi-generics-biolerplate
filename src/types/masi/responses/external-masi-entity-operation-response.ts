@@ -1,4 +1,4 @@
 import { CrudOperation } from "../operations/crud-operation";
-import { ExternalMasiEntity } from "../entities/external-masi-entity";
+import { ExternalEntity } from "../entities/external-entity";
 
-export interface ExternalMasiEntityOperationResponse<Operation extends CrudOperation, entity extends ExternalMasiEntity> { responseData: any, duration: number };
+export interface ExternalMasiEntityOperationResponse<Operation extends CrudOperation, entity extends ExternalEntity> { responseData: any, duration: number };
